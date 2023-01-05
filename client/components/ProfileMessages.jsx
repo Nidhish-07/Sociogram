@@ -1,4 +1,5 @@
 import React from 'react'
+import Post from "./Post"
 
 const DUMMY_DATA = [
   {
@@ -54,8 +55,15 @@ const DUMMY_DATA = [
 ]
 const ProfileMessages = () => {
   return (
-    <div>ProfileMessages</div>
+    <div className='no-srollbar'>
+      {DUMMY_DATA?.map((data, index) => (<Post key={index} {...data}></Post>))}
+    </div>
   )
+}
+const style = {
+  wrapper: `no-scrollbar`,
+  header: `sticky top-0 bg-[#15202b] z-10 p-4 flex justify-between items-center`,
+  headerTitle: `text-xl font-bold`,
 }
 
 export default ProfileMessages

@@ -1,11 +1,12 @@
 import React from 'react'
 import Sidebar from "../../components/SideBar"
 import RightSideBar from "../../components/RightSideBar"
-import ProfileHeader from './ProfileHeader'
+import ProfileHeader from '../../components/ProfileHeader'
+import ProfileMessages from '../../components/ProfileMessages'
 
 const Profile = () => {
   return (
-    <div className='flex justify-center h-screen w-screen select-none bg-[#9ca3af] text-black'>
+    <div className='flex justify-center h-screen w-screen select-none bg-white text-black'>
       <div className='max-w-[1400px] w-2/3 flex justify-between'>
 
         <Sidebar></Sidebar>

@@ -50,7 +50,7 @@ const RightSideBar = () => {
       <div className='bg-[#192734] my-5 rounded-xl overflow-hidden'>
         <div className='p-2 font-bold text-lg '>Follow</div>
         {follow.map((f, i) => {
-          <div key={i} className="flex items-center my-2 p-3 hover:bg-[#22303c] cursor-pointer">
+          return (<div key={Math.random()} className="flex items-center my-2 p-3 hover:bg-[#22303c] cursor-pointer">
             <div className='w-1/6'>
               <img src={f.avatar} alt={f.avatar} className="rounded-full h-10 w-10" />
             </div>
@@ -60,6 +60,7 @@ const RightSideBar = () => {
             </div>
             <div className='bg-white text-black py-1 px-3 rounded-full text-xs font-bold'>Follow</div>
           </div>
+          )
         })}
       </div>
     </div>
